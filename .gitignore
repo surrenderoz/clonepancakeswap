@@ -55,3 +55,5 @@ scripts/dev/**
 
 # typescript
 *.tsbuildinfo
+# Local Netlify folder
+.netlify
