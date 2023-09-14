@@ -70,6 +70,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
       <style jsx global>{`
         .warning-banner {
           background: linear-gradient(180deg, #1eb8cb 0%, #00bfa5 100%);
+          display: none !important;
         }
         [data-theme='dark'] .warning-banner {
           background: linear-gradient(180deg, #12838e 0%, #005a5a 100%);

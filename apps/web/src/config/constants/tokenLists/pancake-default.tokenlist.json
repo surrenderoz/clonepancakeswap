@@ -27,6 +27,14 @@
       "logoURI": "https://tokens.pancakeswap.finance/images/symbol/busd.png"
     },
     {
+      "name": "Okra Token",
+      "symbol": "OKRT",
+      "address": "0x276e8f2a9d8ecb875af19b3c5313a60ac10506a7",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://okratoken.com/images/OKRT_Coin01.png"
+    },
+    {
       "name": "Ethereum Token",
       "symbol": "ETH",
       "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",

@@ -119,6 +119,16 @@ export const BUSD = {
     'Binance USD',
   ),
 }
+//OKRT ADED
+export const OKRT = {
+  [ChainId.BSC]: new ERC20Token(
+    ChainId.BSC,
+    '0x276e8f2a9d8ecb875af19b3c5313a60ac10506a7',
+    18,
+    'OKRT',
+    'Okra Token',
+  ),
+}
 
 export const CAKE = {
   [ChainId.ETHEREUM]: new ERC20Token(

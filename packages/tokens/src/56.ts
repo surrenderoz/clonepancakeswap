@@ -13,6 +13,14 @@ export const bscTokens = {
     'BNB',
     'https://www.binance.com/',
   ),
+  okrt: new ERC20Token(
+    ChainId.BSC,
+    '0xf1e145E8E47287A2519f1EC03254f62E47F3E029',
+    18,
+    'OKRT',
+    'Okra Token',
+    'https://www.okratoken.com/',
+  ),
   cake: CAKE_MAINNET,
   gmi: new ERC20Token(
     ChainId.BSC,
