@@ -15,7 +15,7 @@ export const bscTokens = {
   ),
   okrt: new ERC20Token(
     ChainId.BSC,
-    '0xf1e145E8E47287A2519f1EC03254f62E47F3E029',
+    '0x276e8f2a9d8ecb875af19b3c5313a60ac10506a7',
     18,
     'OKRT',
     'Okra Token',

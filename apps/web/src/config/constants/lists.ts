@@ -15,9 +15,43 @@ export const PANCAKE_BSC_MM = 'https://tokens.pancakeswap.finance/pancakeswap-bn
 
 const COINGECKO_ETH = 'https://tokens.coingecko.com/uniswap/all.json'
 // export const CMC = 'https://tokens.pancakeswap.finance/cmc.json' // not updated for a while
+/// ading OKRA  default {}
+
+const OKRA = JSON.stringify({
+  "name": "CoinGecko",
+  "timestamp": "2023-09-11T23:18:49.691Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 35
+  },
+  "logoURI": "https://tokens.pancakeswap.finance/images/projects/coingecko.png",
+  "keywords": [
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "Okra Token",
+      "symbol": "OKRT",
+      "address": "0x276e8f2a9d8ecb875af19b3c5313a60ac10506a7",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://okratoken.com/images/OKRT_Coin01.png"
+    },
+    {
+      "name": "Gecko Finance",
+      "symbol": "GECKO",
+      "address": "0x2E43CfDCf3191c2B4e73ecd2761d10B17404C311",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://bscscan.com/token/images/geckofinance_32.png"
+    },
+  ]
+})
+
 
 const ETH_URLS = [PANCAKE_ETH_DEFAULT, PANCAKE_ETH_MM, COINGECKO_ETH]
-const BSC_URLS = [PANCAKE_EXTENDED, COINGECKO, PANCAKE_BSC_MM]
+const BSC_URLS = [OKRA]
 const POLYGON_ZKEVM_URLS = [PANCAKE_POLYGON_ZKEVM_DEFAULT, 'https://tokens.coingecko.com/polygon-zkevm/all.json']
 const ARBITRUM_URLS = [PANCAKE_ARB_DEFAULT, 'https://tokens.coingecko.com/arbitrum-one/all.json']
 const LINEA_URLS = [PANCAKE_LINEA_DEFAULT, 'https://tokens.coingecko.com/linea/all.json']
@@ -35,38 +69,38 @@ export const WARNING_LIST_URLS: string[] = []
 // lower index == higher priority for token import
 export const DEFAULT_LIST_OF_LISTS: string[] = [
   ...BSC_URLS,
-  ...ETH_URLS,
-  ...ZKSYNC_URLS,
-  ...LINEA_URLS,
-  ...POLYGON_ZKEVM_URLS,
-  ...BASE_URLS,
-  ...ARBITRUM_URLS,
-  OP_SUPER_CHAIN_URL,
-  ...UNSUPPORTED_LIST_URLS, // need to load unsupported tokens as well
-  ...WARNING_LIST_URLS,
+  // ...ETH_URLS,
+  // ...ZKSYNC_URLS,
+  // ...LINEA_URLS,
+  // ...POLYGON_ZKEVM_URLS,
+  // ...BASE_URLS,
+  // ...ARBITRUM_URLS,
+  // OP_SUPER_CHAIN_URL,
+  // ...UNSUPPORTED_LIST_URLS, // need to load unsupported tokens as well
+  // ...WARNING_LIST_URLS,
 ]
 
 // default lists to be 'active' aka searched across
 export const DEFAULT_ACTIVE_LIST_URLS: string[] = [
   PANCAKE_EXTENDED,
-  PANCAKE_ETH_DEFAULT,
-  PANCAKE_ETH_MM,
-  PANCAKE_BSC_MM,
-  PANCAKE_ETH_DEFAULT,
-  PANCAKE_POLYGON_ZKEVM_DEFAULT,
-  PANCAKE_ZKSYNC_DEFAULT,
-  PANCAKE_ARB_DEFAULT,
-  PANCAKE_LINEA_DEFAULT,
-  PANCAKE_BASE_DEFAULT,
-  OP_SUPER_CHAIN_URL,
+  // PANCAKE_ETH_DEFAULT,
+  // PANCAKE_ETH_MM,
+  // PANCAKE_BSC_MM,
+  // PANCAKE_ETH_DEFAULT,
+  // PANCAKE_POLYGON_ZKEVM_DEFAULT,
+  // PANCAKE_ZKSYNC_DEFAULT,
+  // PANCAKE_ARB_DEFAULT,
+  // PANCAKE_LINEA_DEFAULT,
+  // PANCAKE_BASE_DEFAULT,
+  // OP_SUPER_CHAIN_URL,
 ]
 
 export const MULTI_CHAIN_LIST_URLS: { [chainId: number]: string[] } = {
   [ChainId.BSC]: BSC_URLS,
-  [ChainId.ETHEREUM]: ETH_URLS,
-  [ChainId.ZKSYNC]: ZKSYNC_URLS,
-  [ChainId.POLYGON_ZKEVM]: POLYGON_ZKEVM_URLS,
-  [ChainId.ARBITRUM_ONE]: ARBITRUM_URLS,
-  [ChainId.LINEA]: LINEA_URLS,
-  [ChainId.BASE]: BASE_URLS,
+  // [ChainId.ETHEREUM]: ETH_URLS,
+  // [ChainId.ZKSYNC]: ZKSYNC_URLS,
+  // [ChainId.POLYGON_ZKEVM]: POLYGON_ZKEVM_URLS,
+  // [ChainId.ARBITRUM_ONE]: ARBITRUM_URLS,
+  // [ChainId.LINEA]: LINEA_URLS,
+  // [ChainId.BASE]: BASE_URLS,
 }

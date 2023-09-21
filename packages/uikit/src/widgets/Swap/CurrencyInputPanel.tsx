@@ -32,7 +32,7 @@ export function CurrencyInputPanel({
         flexDirection="column"
         flexWrap="nowrap"
         position="relative"
-        backgroundColor="backgroundAlt"
+        backgroundColor="backgroundAlt2"
         zIndex="1"
       >
         <AtomBox
